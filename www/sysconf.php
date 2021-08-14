@@ -21,7 +21,7 @@ $GLOBALS['SYSTEM'] = [
         'medportal.local'       => 'development',
         'localhost'             => 'development',
         '127\.0\.0\.1'          => 'development',
-        '(www\.)?mydomain\.com' => 'production',
+        'medportal.ebarrosjr.dev' => 'production',
     ],
 
     // Web server doc root directory
