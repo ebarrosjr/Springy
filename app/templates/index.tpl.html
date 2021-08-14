@@ -31,7 +31,11 @@
 							{date('d/m/Y', strtotime($u['created_at']))}
 						</td>
 						<td>
-							{$u['deleted']?'<i class="text-danger">Excluído</i>':'<i class="text-success">Ativo</i>'}
+							{if $u['deleted']}
+							<i class="text-danger">Excluído</i>
+							{else}
+							<i class="text-success">Ativo</i>
+							{/if}
 						</td>
 						<td class="text-end">
 							<a href="/editar/{$u['id']}" class="btn btn-sm btn-info me-1">EDIT</a>
