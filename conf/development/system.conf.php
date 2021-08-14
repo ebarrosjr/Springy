@@ -30,7 +30,7 @@ $conf = [
     'cache'             => false,
     'cache-control'     => 'no-cache',
     'system_error'      => [
-        'save_in_database' => false,
+        'save_in_database' => true,
     ],
 ];
 

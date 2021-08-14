@@ -17,14 +17,12 @@ class Index_Controller extends Controller
      */
     public function _default()
     {
-        $date = date('F j, Y');
-
-        Springy\Kernel::debug('Exemplo de debug 1');
-        Springy\Kernel::debug('Exemplo de debug 2', 'Exemplo com título');
-        Springy\Kernel::debug('Exemplo de debug 3', 'Título do Exemplo 3', false, false);
+        $users = new UsuariosModel();
+        $users->load(['deleted' => 0]);
+        $dados = $users->all();
 
         $tpl = $this->_template();
-        $tpl->assign('date', $date);
+        $tpl->assign('users', $dados);
         $tpl->display();
     }
 }

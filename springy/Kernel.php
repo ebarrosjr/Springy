@@ -176,7 +176,7 @@ class Kernel
 
         /// The command
         $command = URI::getSegment(0, false);
-
+       
         switch ($command) {
             case '_':
             case '_springy_':
