@@ -19,7 +19,7 @@ class Index_Controller extends Controller
     {
         $users = new UsuariosModel();
         //$users->load(['deleted' => 0]); Resolvi trazer todos
-        $users->load([1 => 1]);
+        $users->load(['1 = 1']);
         $dados = $users->all();
 
         $tpl = $this->_template();
