@@ -13,6 +13,7 @@
 						<th>#ID</th>
 						<th>Nome</th>
 						<th>Criado em</th>
+						<th>Situação</th>
 						<th class="text-end">Ações</th>
 					</tr>
 				</thead>
@@ -28,6 +29,9 @@
 						</td>
 						<td>
 							{date('d/m/Y', strtotime($u['created_at']))}
+						</td>
+						<td>
+							{$u['deleted']?'<i class="text-danger">Excluído</i>':'<i class="text-success">Ativo</i>'}
 						</td>
 						<td class="text-end">
 							<a href="/editar/{$u['id']}" class="btn btn-sm btn-info me-1">EDIT</a>
