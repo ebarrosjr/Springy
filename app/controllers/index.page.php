@@ -18,7 +18,8 @@ class Index_Controller extends Controller
     public function _default()
     {
         $users = new UsuariosModel();
-        $users->load(['deleted' => 0]);
+        //$users->load(['deleted' => 0]); Resolvi trazer todos
+        $users->load([1 => 1]);
         $dados = $users->all();
 
         $tpl = $this->_template();

@@ -57,7 +57,7 @@ CREATE TABLE `test` (
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
   `deleted` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,7 +66,7 @@ CREATE TABLE `test` (
 
 LOCK TABLES `test` WRITE;
 /*!40000 ALTER TABLE `test` DISABLE KEYS */;
-INSERT INTO `test` VALUES (1,'Everton','2021-08-13 23:26:58','2021-08-14 02:27:04',0),(2,'Jorge Araújo','2021-08-13 23:42:45','2021-08-14 02:42:51',0);
+INSERT INTO `test` VALUES (1,'Everton Jr','2021-08-13 23:26:58','2021-08-14 21:14:23',0),(2,'Everton Neto','2021-08-13 23:42:45','2021-08-14 21:14:23',0),(3,'Jeniffer Barros','2021-08-13 23:42:45',NULL,0),(4,'Maria Clara','2021-08-13 23:42:45',NULL,1),(5,'Guilherme Barros','2021-08-13 23:42:45',NULL,1);
 /*!40000 ALTER TABLE `test` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -79,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-14 18:02:50
+-- Dump completed on 2021-08-14 18:14:38
